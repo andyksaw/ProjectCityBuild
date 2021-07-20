@@ -26,7 +26,7 @@
         "spatie/laravel-sitemap": "^5.9",
         "stripe/stripe-php": "^7.67",
         "teamtnt/laravel-scout-tntsearch-driver": "^11.0",
-        "xpaw/php-minecraft-query": "^2.0"
+        "xpaw/php-minecraft-query": "^4.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.2",

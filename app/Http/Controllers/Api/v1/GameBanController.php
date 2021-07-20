@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers\Api\v1;
 
 use App\Entities\Bans\Resources\GameBanResource;
 use App\Entities\Bans\Resources\GameUnbanResource;

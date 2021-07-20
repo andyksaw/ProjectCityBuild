@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers\Api\v1;
 
 use App\Entities\Donations\Models\Donation;
 use App\Entities\Donations\Models\DonationPerk;
