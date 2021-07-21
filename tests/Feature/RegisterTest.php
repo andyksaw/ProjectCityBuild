@@ -27,6 +27,13 @@ class RegisterTest extends TestCase
         ]);
     }
 
+    public function testCannotSeeRegisterSignedIn()
+    {
+        $this->actingAs(Account::factory()->create())
+            ->get(route('front.register'))
+            ->assertRedirect(route('front.account.settings'));
+    }
+
     public function testUserCanRegister()
     {
         $unactivatedAccount = Account::factory()

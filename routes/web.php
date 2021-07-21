@@ -57,11 +57,12 @@ Route::prefix('login')->group(function () {
     Route::get('/', [
         'as' => 'front.login',
         'uses' => 'LoginController@create',
-    ]);
+    ])->middleware('guest');
+
     Route::post('/', [
         'as' => 'front.login.submit',
         'uses' => 'LoginController@store',
-    ]);
+    ])->middleware('guest');
 
     Route::get('/reauth', [
         'as' => 'password.confirm',
@@ -120,11 +121,13 @@ Route::prefix('register')->group(function () {
     Route::get('/', [
         'as' => 'front.register',
         'uses' => 'RegisterController@showRegisterView',
-    ]);
+    ])->middleware('guest');
+
     Route::post('/', [
         'as' => 'front.register.submit',
         'uses' => 'RegisterController@register',
-    ]);
+    ])->middleware('guest');
+
     Route::get('activate', [
         'as' => 'front.register.activate',
         'uses' => 'RegisterController@activate',

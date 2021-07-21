@@ -16,6 +16,13 @@ class LoginTest extends TestCase
         $this->account = Account::factory()->create();
     }
 
+    public function testCannotSeeLoginSignedIn()
+    {
+        $this->actingAs($this->account)
+            ->get(route('front.login'))
+            ->assertRedirect(route('front.account.settings'));
+    }
+
     public function testUserIsRedirectedToDiscourseSSOWhenLoggingInWithCorrectCredentials()
     {
         $this->post(route('front.login.submit'), [
