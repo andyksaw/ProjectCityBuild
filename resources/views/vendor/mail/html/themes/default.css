@@ -4,14 +4,14 @@ body,
 body *:not(html):not(style):not(br):not(tr):not(code) {
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     position: relative;
 }
 
 body {
     -webkit-text-size-adjust: none;
     background-color: #ffffff;
-    color: #000;
+    color: #262626;
     height: 100%;
     line-height: 1.4;
     margin: 0;
@@ -80,7 +80,7 @@ img {
     -premailer-cellpadding: 0;
     -premailer-cellspacing: 0;
     -premailer-width: 100%;
-    background-color: #fffcdb;
+    background-color: #3d3f41;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -121,9 +121,9 @@ img {
     -premailer-cellpadding: 0;
     -premailer-cellspacing: 0;
     -premailer-width: 100%;
-    background-color: #fffcdb;
-    border-bottom: 1px solid #fffcdb;
-    border-top: 1px solid #fffcdb;
+    background-color: #3d3f41;
+    border-bottom: 1px solid #3d3f41;
+    border-top: 1px solid #3d3f41;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -133,12 +133,11 @@ img {
     -premailer-cellpadding: 0;
     -premailer-cellspacing: 0;
     -premailer-width: 570px;
-    border-radius: 5px;
     background-color: #ffffff;
-    border-bottom-color: #e6e6e6;
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
-    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.05);
+    border-color: #fff;
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: inset 0 -4px 0 rgba(0,0,0,.25);
     margin: 0 auto;
     padding: 0;
     width: 570px;
@@ -169,13 +168,13 @@ img {
 }
 
 .footer p {
-    color: #b0adc5;
+    color: #eaeaea;
     font-size: 12px;
     text-align: center;
 }
 
 .footer a {
-    color: #b0adc5;
+    color: #eaeaea;
     text-decoration: underline;
 }
 
@@ -227,15 +226,16 @@ img {
     display: inline-block;
     overflow: hidden;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .button-blue,
 .button-primary {
-    background-color: #1887dc;
-    border-bottom: 8px solid #1887dc;
-    border-left: 18px solid #1887dc;
-    border-right: 18px solid #1887dc;
-    border-top: 8px solid #1887dc;
+    background-color: #3577f8;
+    border-bottom: 8px solid #3577f8;
+    border-left: 18px solid #3577f8;
+    border-right: 18px solid #3577f8;
+    border-top: 8px solid #3577f8;
 }
 
 .button-green,
@@ -264,7 +264,7 @@ img {
 }
 
 .panel-content {
-    background-color: #fffcdb;
+    background-color: #edf2f7;
     color: #718096;
     padding: 16px;
 }
