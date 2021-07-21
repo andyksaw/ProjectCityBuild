@@ -1,8 +1,9 @@
 @extends('admin.layouts.admin')
 
-@section('title', 'Accounts')
+@section('title', $title ?? 'Accounts')
 
 @section('toolbar')
+    @if($showSearch ?? true)
     <div class="d-flex align-items-center">
         @if(!empty($query))
             <a href="{{ route('front.panel.accounts.index') }}" class="d-inline-block me-5 link-danger"><i class="fas fa-times me-2"></i>Clear</a>
@@ -14,6 +15,7 @@
             </div>
         </form>
     </div>
+    @endif
 @endsection
 
 @section('body')

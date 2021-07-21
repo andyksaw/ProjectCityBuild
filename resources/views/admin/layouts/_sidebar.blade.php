@@ -25,6 +25,12 @@
                     Minecraft Players
                 </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link {{ request()->is('panel/groups*') ? 'active' : '' }} " href="{{ route('front.panel.groups.index') }}">
+                    <i class="fas fa-users"></i>
+                    Groups
+                </a>
+            </li>
         </ul>
 
         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">

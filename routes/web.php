@@ -252,6 +252,8 @@ Route::group(['prefix' => 'panel', 'as' => 'front.panel.', 'namespace' => 'Panel
     Route::resource('donations', 'DonationController');
     Route::resource('donation-perks', 'DonationPerksController')->only(['create', 'store', 'edit', 'update', 'destroy']);
     Route::resource('minecraft-players', 'MinecraftPlayerController')->except(['destroy']);
+    Route::get('groups/{group}/accounts', 'GroupMemberController@index')->name('groups.accounts');
+    Route::get('groups', 'GroupController@index')->name('groups.index');
 
     Route::post('minecraft-players/lookup', [
         'as' => 'minecraft-players.lookup',
