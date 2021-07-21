@@ -8,6 +8,7 @@ $collapse-dimension: 1024px;
 .navbar {
     width: 100%;
     position: fixed;
+    top: 0;
     background: $navbar-bg-color;
     border-bottom: 3px solid $navbar-border-color;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
