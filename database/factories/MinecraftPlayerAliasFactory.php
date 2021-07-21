@@ -22,7 +22,7 @@ class MinecraftPlayerAliasFactory extends Factory
     public function definition()
     {
         return [
-            'alias' => $this->faker->userName,
+            'alias' => substr($this->faker->userName, 0, 16),
             'registered_at' => $this->faker->dateTimeBetween('-180days', '-1days'),
         ];
     }
